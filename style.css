@@ -1,0 +1,177 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: merriweather, serif;
+  font-size: 3vh;
+  color: 2e2e2e;
+  letter-spacing: .01rem;
+  margin-bottom: 40px;
+  line-height: 1.75rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+h1 {
+  
+  font-size: 6vh;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  justify-content: center;
+  background:rgba(28, 169, 235, 0.2);
+}
+
+h2 {
+  
+  font-size: 4vh;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px;
+  justify-content: center;
+
+}
+
+h3 {
+  
+  font-size: 4vh;
+  font-weight: bolder;
+  justify-content: center;
+  padding: 0px;
+  text-align: center;
+}
+
+
+a {
+  color: 2e2e2e;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background:rgba(28, 169, 235, 0.2);
+  padding:10px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition:all 0.5s;
+}
+
+a:hover {
+  background:rgba(0,0,0,0.3);
+}
+
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding:10px;
+}
+
+.aboutMe {
+  text-align: center;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+.email {
+  text-align: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+  .latestProjects {
+    text-align: center;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+  }
+
+  .skills {
+    text-align: center;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+}
+
+/* Flex Container */
+.flex-nav ul {
+  border:1px solid black;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  
+}
+
+.social {
+  width: 100%;
+  list-style: none;
+}
+
+
+.container {
+  border:1px solid black;
+  list-style: inherit;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  
+}
+.aboutMe {
+  width: 50%;
+}
+.latestProjects {
+  width: 50%;
+}
+
+@media all and (max-width:1000px) {
+  
+  /* wrap items 1-6 (li) move class="social" (.social) below items 1-6 and space evenly*/
+ul  {
+  
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+.social {
+flex-wrap: wrap;
+justify-content: space-around;
+
+}
+
+li {
+  width: 100%
+}
+
+.social {
+  width: 50%;
+}
+
+@media all and (max-width:500px) {
+  ul  {
+  
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .social {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  }
+  
+  li {
+    width: 100%
+  }
+  
+  .social {
+    width: 50%;
+  }
+}
